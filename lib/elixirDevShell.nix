@@ -37,6 +37,10 @@ mkShell {
     # VS Code language server configuration
     export ELS_INSTALL_PREFIX="${elixir-ls}/lib"
 
+    # VS Code extension crash workaround
+    export ELS_MODE=language_server
+    export ELS_SCRIPT="ElixirLS.LanguageServer.CLI.main()"
+
     # Emacs
     export PATH="$ELS_INSTALL_PREFIX:$PATH"
   '';

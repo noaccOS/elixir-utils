@@ -1,5 +1,6 @@
 lib:
 {
+  defaultSystems = [ "aarch64-linux" "x86_64-linux" "aarch64-darwin" "x86_64-darwin" "i686-linux" ];
   asdfOverlay = import lib/asdfOverlay.nix lib;
   beamOverlay = import lib/beamOverlay.nix;
   elixirDevShell = { pkgs, withLSP ? true, erlang ? null, elixir ? null, elixir-otp ? erlang }:

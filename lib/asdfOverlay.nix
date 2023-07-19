@@ -1,8 +1,9 @@
 lib:
+elixirDevShell:
 { src }:
 final: prev:
 let
-  beamOverlay = import ./beamOverlay.nix;
+  beamOverlay = import ./beamOverlay.nix elixirDevShell;
   asdfVersion = asdfPackages: program: lib.strings.removePrefix "${program} " (lib.lists.findFirst (lib.strings.hasPrefix "${program} ") null asdfPackages);
 
   contents = builtins.readFile (src + "/.tool-versions");

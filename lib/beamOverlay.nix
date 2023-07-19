@@ -1,3 +1,4 @@
+elixirDevShell:
 { erlang ? null
 , elixir ? null
 , elixir-otp ? erlang
@@ -17,4 +18,5 @@ in
   erlang = finalErlang;
   elixir = finalElixir;
   elixir-ls = (prev.elixir-ls.override { elixir = finalElixir; });
+  elixirDevShell = final.callPackage ./elixirDevShell.nix { };
 }

@@ -10,6 +10,6 @@
       let pkgs = import nixpkgs { inherit system; overlays = [ self.overlays.${system}.default ]; };
       in {
         overlays.default = elixir-utils.lib.beamOverlay { elixir = "1.15.3"; erlang = "26.0.2"; };
-        devShell.default = elixir-utils.lib.elixirDevShell { inherit pkgs; };
+        devShell.default = final.elixirDevShell;
       });
 }

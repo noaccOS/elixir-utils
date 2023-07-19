@@ -10,6 +10,6 @@
       let pkgs = import nixpkgs { inherit system; overlays = [ self.overlays.${system}.default ]; };
       in {
         overlays.default = elixir-utils.lib.asdfOverlay { src = ./.; };
-        devShells.default = elixir-utils.lib.elixirDevShell { inherit pkgs; };
+        devShells.default = final.elixirDevShell;
       });
 }

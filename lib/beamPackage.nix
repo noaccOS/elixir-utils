@@ -1,6 +1,6 @@
 { name, version, parentAttrSet }:
 let
-  allMinors = builtins.fromJSON (builtins.readFile ../beam-lock/${name}.json);
+  allMinors = builtins.fromJSON (builtins.readFile ./${name}-lock.json);
   minorAttrs = allMinors.${version};
 
   # 1.14 -> 1_14

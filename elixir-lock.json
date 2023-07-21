@@ -1,0 +1,878 @@
+{
+  "1.15.4": {
+    "rev": "c521bdb91a77b36be16fdf18d632ad7719de4f91",
+    "ref": "refs/tags/v1.15.4",
+    "version": "1.15.4",
+    "minor": "1_15"
+  },
+  "1.15.3": {
+    "rev": "694b9b02189abda4500c8fb84eda9dae178109a4",
+    "ref": "refs/tags/v1.15.3",
+    "version": "1.15.3",
+    "minor": "1_15"
+  },
+  "1.15.2": {
+    "rev": "7f7a8bca99fa306a41a985df0018ba642e577d4d",
+    "ref": "refs/tags/v1.15.2",
+    "version": "1.15.2",
+    "minor": "1_15"
+  },
+  "1.15.1": {
+    "rev": "f1e5d770eaa6841cc9536be35794c867774d0dbc",
+    "ref": "refs/tags/v1.15.1",
+    "version": "1.15.1",
+    "minor": "1_15"
+  },
+  "1.15.0-rc.2": {
+    "rev": "9a9cf419a134c5a18de95ad2c042ef81976e3dff",
+    "ref": "refs/tags/v1.15.0-rc.2",
+    "version": "1.15.0-rc.2",
+    "minor": "1_15"
+  },
+  "1.15.0-rc.1": {
+    "rev": "d7bdf2270803c84971ad12e7a6b713fb2dfa9db4",
+    "ref": "refs/tags/v1.15.0-rc.1",
+    "version": "1.15.0-rc.1",
+    "minor": "1_15"
+  },
+  "1.15.0-rc.0": {
+    "rev": "3cdb3883e4e3b38e5389d98cc9429a6ca4f17143",
+    "ref": "refs/tags/v1.15.0-rc.0",
+    "version": "1.15.0-rc.0",
+    "minor": "1_15"
+  },
+  "1.15.0": {
+    "rev": "9fd85b06dcb74217108cd0bdf4164b6cd7f9e667",
+    "ref": "refs/tags/v1.15.0",
+    "version": "1.15.0",
+    "minor": "1_15"
+  },
+  "1.14.5": {
+    "rev": "81d6007410b3ae43e279cfb689bd03ffc5f06830",
+    "ref": "refs/tags/v1.14.5",
+    "version": "1.14.5",
+    "minor": "1_14"
+  },
+  "1.14.4": {
+    "rev": "6f96693b355a9b670f2630fd8e6217b69e325c5a",
+    "ref": "refs/tags/v1.14.4",
+    "version": "1.14.4",
+    "minor": "1_14"
+  },
+  "1.14.3": {
+    "rev": "6730d669fb319411f8e411d4126f1f4067ef9231",
+    "ref": "refs/tags/v1.14.3",
+    "version": "1.14.3",
+    "minor": "1_14"
+  },
+  "1.14.2": {
+    "rev": "0909940b04a3e22c9ea4fedafa2aac349717011c",
+    "ref": "refs/tags/v1.14.2",
+    "version": "1.14.2",
+    "minor": "1_14"
+  },
+  "1.14.1": {
+    "rev": "a285e5876b6f69e7c340d04851aae63c8a32bf1d",
+    "ref": "refs/tags/v1.14.1",
+    "version": "1.14.1",
+    "minor": "1_14"
+  },
+  "1.14.0-rc.1": {
+    "rev": "185eeec5ecbc2a0c8d9b8b97cb2d23108615ffdb",
+    "ref": "refs/tags/v1.14.0-rc.1",
+    "version": "1.14.0-rc.1",
+    "minor": "1_14"
+  },
+  "1.14.0-rc.0": {
+    "rev": "6449239782ac76a14684628aa22af2246ad45b48",
+    "ref": "refs/tags/v1.14.0-rc.0",
+    "version": "1.14.0-rc.0",
+    "minor": "1_14"
+  },
+  "1.14.0": {
+    "rev": "c5151e6890b5ac8df13276459696f0f47a8e634b",
+    "ref": "refs/tags/v1.14.0",
+    "version": "1.14.0",
+    "minor": "1_14"
+  },
+  "1.13.4": {
+    "rev": "7e4fbe657dbf9c3e19e3d2bd6c17cc6d724b4710",
+    "ref": "refs/tags/v1.13.4",
+    "version": "1.13.4",
+    "minor": "1_13"
+  },
+  "1.13.3": {
+    "rev": "b63f8f541e9d8951dbbcb39a8551bd74a3fe9a59",
+    "ref": "refs/tags/v1.13.3",
+    "version": "1.13.3",
+    "minor": "1_13"
+  },
+  "1.13.2": {
+    "rev": "9ad182986cf5d3b8eb45625b41742c380d45391f",
+    "ref": "refs/tags/v1.13.2",
+    "version": "1.13.2",
+    "minor": "1_13"
+  },
+  "1.13.1": {
+    "rev": "33f9d04851a2664aeae5f5f78eeef9e5b4c38030",
+    "ref": "refs/tags/v1.13.1",
+    "version": "1.13.1",
+    "minor": "1_13"
+  },
+  "1.13.0-rc.1": {
+    "rev": "2765e0f2101c598847fede24a12c52b1b21b47f1",
+    "ref": "refs/tags/v1.13.0-rc.1",
+    "version": "1.13.0-rc.1",
+    "minor": "1_13"
+  },
+  "1.13.0-rc.0": {
+    "rev": "5062a154fa9c2378fc6633d4f0655a2e362d3328",
+    "ref": "refs/tags/v1.13.0-rc.0",
+    "version": "1.13.0-rc.0",
+    "minor": "1_13"
+  },
+  "1.13.0": {
+    "rev": "caed7d1d3fe368564f7204680c89ae58c8d7303b",
+    "ref": "refs/tags/v1.13.0",
+    "version": "1.13.0",
+    "minor": "1_13"
+  },
+  "1.12.3": {
+    "rev": "74bfab8ee271e53d24cb0012b5db1e2a931e0470",
+    "ref": "refs/tags/v1.12.3",
+    "version": "1.12.3",
+    "minor": "1_12"
+  },
+  "1.12.2": {
+    "rev": "58ca6524f88bfe7e963deafe0e7d6aa07a568003",
+    "ref": "refs/tags/v1.12.2",
+    "version": "1.12.2",
+    "minor": "1_12"
+  },
+  "1.12.1": {
+    "rev": "42807d288e086a12c4309a254f19cb1de779c8ce",
+    "ref": "refs/tags/v1.12.1",
+    "version": "1.12.1",
+    "minor": "1_12"
+  },
+  "1.12.0-rc.1": {
+    "rev": "ce321f8cf45e563575b1cd68fd837d599dcc9367",
+    "ref": "refs/tags/v1.12.0-rc.1",
+    "version": "1.12.0-rc.1",
+    "minor": "1_12"
+  },
+  "1.12.0-rc.0": {
+    "rev": "31d2b99879bcd393532e9976bf88c02f623c56a1",
+    "ref": "refs/tags/v1.12.0-rc.0",
+    "version": "1.12.0-rc.0",
+    "minor": "1_12"
+  },
+  "1.12.0": {
+    "rev": "f73e318bce04dfc829162e569b2b993df6f2e5df",
+    "ref": "refs/tags/v1.12.0",
+    "version": "1.12.0",
+    "minor": "1_12"
+  },
+  "1.11.4": {
+    "rev": "308255bda81e7f76f9bec838cef033e8e869981b",
+    "ref": "refs/tags/v1.11.4",
+    "version": "1.11.4",
+    "minor": "1_11"
+  },
+  "1.11.3": {
+    "rev": "d30c5c0185607f08797441ab8af12636ad8dbd7e",
+    "ref": "refs/tags/v1.11.3",
+    "version": "1.11.3",
+    "minor": "1_11"
+  },
+  "1.11.2": {
+    "rev": "7533e56c1baec77c2aa1a4c0ad02730fae464201",
+    "ref": "refs/tags/v1.11.2",
+    "version": "1.11.2",
+    "minor": "1_11"
+  },
+  "1.11.1": {
+    "rev": "5c5259826fd79ebcf5e50ae3a4b395c712909ead",
+    "ref": "refs/tags/v1.11.1",
+    "version": "1.11.1",
+    "minor": "1_11"
+  },
+  "1.11.0-rc.0": {
+    "rev": "48cee5aaa54fad593c5aca940ab3dd330652eab8",
+    "ref": "refs/tags/v1.11.0-rc.0",
+    "version": "1.11.0-rc.0",
+    "minor": "1_11"
+  },
+  "1.11.0": {
+    "rev": "7837cc5c59e3bff003a00d4470d1864ae1ca1458",
+    "ref": "refs/tags/v1.11.0",
+    "version": "1.11.0",
+    "minor": "1_11"
+  },
+  "1.10.4": {
+    "rev": "1145dc01680aab7094f8a6dbd38b65185e14adb4",
+    "ref": "refs/tags/v1.10.4",
+    "version": "1.10.4",
+    "minor": "1_10"
+  },
+  "1.10.3": {
+    "rev": "c88ecdec1655b04f88e3caef22f050bb85740e4c",
+    "ref": "refs/tags/v1.10.3",
+    "version": "1.10.3",
+    "minor": "1_10"
+  },
+  "1.10.2": {
+    "rev": "07450832e7fbc902bfdee124adda1b5a0f6b689d",
+    "ref": "refs/tags/v1.10.2",
+    "version": "1.10.2",
+    "minor": "1_10"
+  },
+  "1.10.1": {
+    "rev": "51c95b60004d3d9d297fff23f576bdd97c931afd",
+    "ref": "refs/tags/v1.10.1",
+    "version": "1.10.1",
+    "minor": "1_10"
+  },
+  "1.10.0-rc.0": {
+    "rev": "105770cfa0ac0591c1fecca17f2221e0ac6af051",
+    "ref": "refs/tags/v1.10.0-rc.0",
+    "version": "1.10.0-rc.0",
+    "minor": "1_10"
+  },
+  "1.10.0": {
+    "rev": "5bd7a90864417e7be9483002cfa0e543d265b71d",
+    "ref": "refs/tags/v1.10.0",
+    "version": "1.10.0",
+    "minor": "1_10"
+  },
+  "1.9.4": {
+    "rev": "055526057ac9992cc1df87441357c4e56d45235d",
+    "ref": "refs/tags/v1.9.4",
+    "version": "1.9.4",
+    "minor": "1_9"
+  },
+  "1.9.3": {
+    "rev": "5af52898d344fda201e2437319449cdc0242eb31",
+    "ref": "refs/tags/v1.9.3",
+    "version": "1.9.3",
+    "minor": "1_9"
+  },
+  "1.9.2": {
+    "rev": "ffe7a577cc80f37381dc289c820842d346002364",
+    "ref": "refs/tags/v1.9.2",
+    "version": "1.9.2",
+    "minor": "1_9"
+  },
+  "1.9.1": {
+    "rev": "79388035f5391f0a283a48fba792ae3b4f4b5f21",
+    "ref": "refs/tags/v1.9.1",
+    "version": "1.9.1",
+    "minor": "1_9"
+  },
+  "1.9.0-rc.0": {
+    "rev": "aad7aa4d2255f1c33f2de6525f67cd7e852324d2",
+    "ref": "refs/tags/v1.9.0-rc.0",
+    "version": "1.9.0-rc.0",
+    "minor": "1_9"
+  },
+  "1.9.0": {
+    "rev": "71c335ac2694d4457ac8f4fefdfc68ae167c8775",
+    "ref": "refs/tags/v1.9.0",
+    "version": "1.9.0",
+    "minor": "1_9"
+  },
+  "1.8.2": {
+    "rev": "98485daab0a9f3ac2d7809d38f5e57cd73cb22ac",
+    "ref": "refs/tags/v1.8.2",
+    "version": "1.8.2",
+    "minor": "1_8"
+  },
+  "1.8.1": {
+    "rev": "511a51ba8925daa025d3c2fd410e170c1b651013",
+    "ref": "refs/tags/v1.8.1",
+    "version": "1.8.1",
+    "minor": "1_8"
+  },
+  "1.8.0-rc.1": {
+    "rev": "32825ebaa0c1f6785dcd30d87f0ade45cd6c20cb",
+    "ref": "refs/tags/v1.8.0-rc.1",
+    "version": "1.8.0-rc.1",
+    "minor": "1_8"
+  },
+  "1.8.0-rc.0": {
+    "rev": "2b594057567f352bd63f43c6535a901db6d37ed4",
+    "ref": "refs/tags/v1.8.0-rc.0",
+    "version": "1.8.0-rc.0",
+    "minor": "1_8"
+  },
+  "1.8.0": {
+    "rev": "2eee2fc6a4c3733537dc95083c4247a1fa723ab1",
+    "ref": "refs/tags/v1.8.0",
+    "version": "1.8.0",
+    "minor": "1_8"
+  },
+  "1.7.4": {
+    "rev": "eb5679bfcc9bd35c4c016e91745b4a1a4d43356a",
+    "ref": "refs/tags/v1.7.4",
+    "version": "1.7.4",
+    "minor": "1_7"
+  },
+  "1.7.3": {
+    "rev": "8ca85ed2a82019df1a2acf3238f24a56370464bb",
+    "ref": "refs/tags/v1.7.3",
+    "version": "1.7.3",
+    "minor": "1_7"
+  },
+  "1.7.2": {
+    "rev": "2b338092b6da5cd5101072dfdd627cfbb49e4736",
+    "ref": "refs/tags/v1.7.2",
+    "version": "1.7.2",
+    "minor": "1_7"
+  },
+  "1.7.1": {
+    "rev": "8aab53b941ee955f005e7b4e08c333f0b94c48b7",
+    "ref": "refs/tags/v1.7.1",
+    "version": "1.7.1",
+    "minor": "1_7"
+  },
+  "1.7.0-rc.1": {
+    "rev": "b6d77696743a34ade6a222cbe2811440ae4e0018",
+    "ref": "refs/tags/v1.7.0-rc.1",
+    "version": "1.7.0-rc.1",
+    "minor": "1_7"
+  },
+  "1.7.0-rc.0": {
+    "rev": "1164784b8ef25967471c068600301db850de58b3",
+    "ref": "refs/tags/v1.7.0-rc.0",
+    "version": "1.7.0-rc.0",
+    "minor": "1_7"
+  },
+  "1.7.0": {
+    "rev": "06e5ec2d4c628e57440b0a393e4efa98e7226173",
+    "ref": "refs/tags/v1.7.0",
+    "version": "1.7.0",
+    "minor": "1_7"
+  },
+  "1.6.6": {
+    "rev": "1ec9d1d7bdd01665deb3607ba6beb8bcd524b85d",
+    "ref": "refs/tags/v1.6.6",
+    "version": "1.6.6",
+    "minor": "1_6"
+  },
+  "1.6.5": {
+    "rev": "a9f1be07ca1a939739bd013f100686c8cf81432a",
+    "ref": "refs/tags/v1.6.5",
+    "version": "1.6.5",
+    "minor": "1_6"
+  },
+  "1.6.4": {
+    "rev": "c107a2fe2623d11d132cdfeefbb7370abd44f85c",
+    "ref": "refs/tags/v1.6.4",
+    "version": "1.6.4",
+    "minor": "1_6"
+  },
+  "1.6.3": {
+    "rev": "45c7f828ef7cb29647d4ac999761ed4e2ff0dc08",
+    "ref": "refs/tags/v1.6.3",
+    "version": "1.6.3",
+    "minor": "1_6"
+  },
+  "1.6.2": {
+    "rev": "c2a9c93f023c0c00e5f387a1476f4cca01752bb8",
+    "ref": "refs/tags/v1.6.2",
+    "version": "1.6.2",
+    "minor": "1_6"
+  },
+  "1.6.1": {
+    "rev": "2b588dfb3ebb2f3221bec3509cb1dbb8e08ef1af",
+    "ref": "refs/tags/v1.6.1",
+    "version": "1.6.1",
+    "minor": "1_6"
+  },
+  "1.6.0-rc.1": {
+    "rev": "67e575eca7b97d4fe063626671d1fd1da0ba7fed",
+    "ref": "refs/tags/v1.6.0-rc.1",
+    "version": "1.6.0-rc.1",
+    "minor": "1_6"
+  },
+  "1.6.0-rc.0": {
+    "rev": "182c730bdb431fd1ff6789057e4903c33e377f43",
+    "ref": "refs/tags/v1.6.0-rc.0",
+    "version": "1.6.0-rc.0",
+    "minor": "1_6"
+  },
+  "1.6.0": {
+    "rev": "63b8d0ba34f38baa6f3a11020215b2f66213d27e",
+    "ref": "refs/tags/v1.6.0",
+    "version": "1.6.0",
+    "minor": "1_6"
+  },
+  "1.5.3": {
+    "rev": "7340ca2d925297e98dd71528a09bf0fb8634b47f",
+    "ref": "refs/tags/v1.5.3",
+    "version": "1.5.3",
+    "minor": "1_5"
+  },
+  "1.5.2": {
+    "rev": "05418eaa4bf4fa8473900741252d93d76ed3307b",
+    "ref": "refs/tags/v1.5.2",
+    "version": "1.5.2",
+    "minor": "1_5"
+  },
+  "1.5.1": {
+    "rev": "1406d853e0e6515007696f871d0a9e2c023da6da",
+    "ref": "refs/tags/v1.5.1",
+    "version": "1.5.1",
+    "minor": "1_5"
+  },
+  "1.5.0-rc.2": {
+    "rev": "e5208421b32f197379b26c55bfde22651bea5e1c",
+    "ref": "refs/tags/v1.5.0-rc.2",
+    "version": "1.5.0-rc.2",
+    "minor": "1_5"
+  },
+  "1.5.0-rc.1": {
+    "rev": "704fb9599b522bb530efdc5bb527d005e0c8ed68",
+    "ref": "refs/tags/v1.5.0-rc.1",
+    "version": "1.5.0-rc.1",
+    "minor": "1_5"
+  },
+  "1.5.0-rc.0": {
+    "rev": "fa0de77862f10496f8285079c7cdc367ead7c8c8",
+    "ref": "refs/tags/v1.5.0-rc.0",
+    "version": "1.5.0-rc.0",
+    "minor": "1_5"
+  },
+  "1.5.0": {
+    "rev": "117b2bf614d4b74281ff6dfe0e0e95caf50ff100",
+    "ref": "refs/tags/v1.5.0",
+    "version": "1.5.0",
+    "minor": "1_5"
+  },
+  "1.4.5": {
+    "rev": "e25c37108a5294b205ad0abe558cb82f19d342c5",
+    "ref": "refs/tags/v1.4.5",
+    "version": "1.4.5",
+    "minor": "1_4"
+  },
+  "1.4.4": {
+    "rev": "867da6f876c48279823a41a33030c95ef37379b2",
+    "ref": "refs/tags/v1.4.4",
+    "version": "1.4.4",
+    "minor": "1_4"
+  },
+  "1.4.3": {
+    "rev": "b2b974dc71e2d98c3179c08a9356835f68442a80",
+    "ref": "refs/tags/v1.4.3",
+    "version": "1.4.3",
+    "minor": "1_4"
+  },
+  "1.4.2": {
+    "rev": "27fdc68ff41a75b16778f2ed8d4d6605764e31b6",
+    "ref": "refs/tags/v1.4.2",
+    "version": "1.4.2",
+    "minor": "1_4"
+  },
+  "1.4.1": {
+    "rev": "0397a46bb762923a91353e1c957ae2443d50dc05",
+    "ref": "refs/tags/v1.4.1",
+    "version": "1.4.1",
+    "minor": "1_4"
+  },
+  "1.4.0-rc.1": {
+    "rev": "16a14c1f6d25e4b51e78fdcacf4f824966a17eb5",
+    "ref": "refs/tags/v1.4.0-rc.1",
+    "version": "1.4.0-rc.1",
+    "minor": "1_4"
+  },
+  "1.4.0-rc.0": {
+    "rev": "fbfb41dfeedf14ccc4bd80c3c366382c8a2fcb9e",
+    "ref": "refs/tags/v1.4.0-rc.0",
+    "version": "1.4.0-rc.0",
+    "minor": "1_4"
+  },
+  "1.4.0": {
+    "rev": "f045705ac559290866abda5f9daeac4b701b6e7f",
+    "ref": "refs/tags/v1.4.0",
+    "version": "1.4.0",
+    "minor": "1_4"
+  },
+  "1.3.4": {
+    "rev": "87710cd49521fc396f3f04fa8615f05e7f57ecc0",
+    "ref": "refs/tags/v1.3.4",
+    "version": "1.3.4",
+    "minor": "1_3"
+  },
+  "1.3.3": {
+    "rev": "0caa75760b14e7392a9f2d7aa08218ba53c8c76a",
+    "ref": "refs/tags/v1.3.3",
+    "version": "1.3.3",
+    "minor": "1_3"
+  },
+  "1.3.2": {
+    "rev": "56f1037973d50721206324db48cf86509779c862",
+    "ref": "refs/tags/v1.3.2",
+    "version": "1.3.2",
+    "minor": "1_3"
+  },
+  "1.3.1": {
+    "rev": "01a1acd27b2b742a480dbc2210177f45982cc77e",
+    "ref": "refs/tags/v1.3.1",
+    "version": "1.3.1",
+    "minor": "1_3"
+  },
+  "1.3.0-rc.1": {
+    "rev": "9eb47818abb00f207e442ffe06eef5a28155d371",
+    "ref": "refs/tags/v1.3.0-rc.1",
+    "version": "1.3.0-rc.1",
+    "minor": "1_3"
+  },
+  "1.3.0-rc.0": {
+    "rev": "7881123953300152650e83e4ba6e56e4d6895d72",
+    "ref": "refs/tags/v1.3.0-rc.0",
+    "version": "1.3.0-rc.0",
+    "minor": "1_3"
+  },
+  "1.3.0": {
+    "rev": "416bf41a032280b988d537bd4635beecc3aeed29",
+    "ref": "refs/tags/v1.3.0",
+    "version": "1.3.0",
+    "minor": "1_3"
+  },
+  "1.2.6": {
+    "rev": "3dbfb92860fb24f83c92e1f1b67f48554fb211d6",
+    "ref": "refs/tags/v1.2.6",
+    "version": "1.2.6",
+    "minor": "1_2"
+  },
+  "1.2.5": {
+    "rev": "e5374cf5d3beb510a0fdeddd0f8b89e8e26445ef",
+    "ref": "refs/tags/v1.2.5",
+    "version": "1.2.5",
+    "minor": "1_2"
+  },
+  "1.2.4": {
+    "rev": "17e8dbbf16c08dff0ded22c37ae80a37f99ff99a",
+    "ref": "refs/tags/v1.2.4",
+    "version": "1.2.4",
+    "minor": "1_2"
+  },
+  "1.2.3": {
+    "rev": "737ac62926db7a692e2fe67c27b696cfd0866674",
+    "ref": "refs/tags/v1.2.3",
+    "version": "1.2.3",
+    "minor": "1_2"
+  },
+  "1.2.2": {
+    "rev": "9decf4c78a911bc1375891bb65fbf2e50fcedeb8",
+    "ref": "refs/tags/v1.2.2",
+    "version": "1.2.2",
+    "minor": "1_2"
+  },
+  "1.2.1": {
+    "rev": "a3d88dc406ca9642bcabf375db7f74f2cc6a751d",
+    "ref": "refs/tags/v1.2.1",
+    "version": "1.2.1",
+    "minor": "1_2"
+  },
+  "1.2.0-rc.1": {
+    "rev": "211a1299cc033debf9a00fc5ac5f4d4e1eb4d6a7",
+    "ref": "refs/tags/v1.2.0-rc.1",
+    "version": "1.2.0-rc.1",
+    "minor": "1_2"
+  },
+  "1.2.0-rc.0": {
+    "rev": "a2860b32a3cc8f543406b582fc583185c8c31e5c",
+    "ref": "refs/tags/v1.2.0-rc.0",
+    "version": "1.2.0-rc.0",
+    "minor": "1_2"
+  },
+  "1.2.0": {
+    "rev": "b1344724b695a9a474d73d4633c5a151f1a7d61d",
+    "ref": "refs/tags/v1.2.0",
+    "version": "1.2.0",
+    "minor": "1_2"
+  },
+  "1.1.1": {
+    "rev": "139d2eac5998259379862ff6ed2a5287f7de4ea6",
+    "ref": "refs/tags/v1.1.1",
+    "version": "1.1.1",
+    "minor": "1_1"
+  },
+  "1.1.0-rc.0": {
+    "rev": "0e3c06b03149022b980e69872003d401c4788fea",
+    "ref": "refs/tags/v1.1.0-rc.0",
+    "version": "1.1.0-rc.0",
+    "minor": "1_1"
+  },
+  "1.1.0": {
+    "rev": "f2a9c7016633ca63541a8160c63a53eb7edbccdb",
+    "ref": "refs/tags/v1.1.0",
+    "version": "1.1.0",
+    "minor": "1_1"
+  },
+  "1.0.5": {
+    "rev": "3eb938a0ba7db5c6cc13d390e6242f66fdc9ef00",
+    "ref": "refs/tags/v1.0.5",
+    "version": "1.0.5",
+    "minor": "1_0"
+  },
+  "1.0.4": {
+    "rev": "e02d7bf913f3e5ea8c9e49648e69324ec5c65919",
+    "ref": "refs/tags/v1.0.4",
+    "version": "1.0.4",
+    "minor": "1_0"
+  },
+  "1.0.3": {
+    "rev": "307675284cfde2e2e3ff4b868ff5c2253dac3936",
+    "ref": "refs/tags/v1.0.3",
+    "version": "1.0.3",
+    "minor": "1_0"
+  },
+  "1.0.2": {
+    "rev": "34df8176385200d483ab483a973c498ffa62e580",
+    "ref": "refs/tags/v1.0.2",
+    "version": "1.0.2",
+    "minor": "1_0"
+  },
+  "1.0.1": {
+    "rev": "89460154bb1ab3faa9a7aad4a1edc621cc35d1de",
+    "ref": "refs/tags/v1.0.1",
+    "version": "1.0.1",
+    "minor": "1_0"
+  },
+  "1.0.0-rc2": {
+    "rev": "8931f345826b71056ab3df0fba7dbb1b9c3bce25",
+    "ref": "refs/tags/v1.0.0-rc2",
+    "version": "1.0.0-rc2",
+    "minor": "1_0"
+  },
+  "1.0.0-rc1": {
+    "rev": "5b4497fa6b2da7831418cf1307248dc73b4ee34b",
+    "ref": "refs/tags/v1.0.0-rc1",
+    "version": "1.0.0-rc1",
+    "minor": "1_0"
+  },
+  "1.0.0": {
+    "rev": "52ff7e96867c027745d29f5d3feb77f546f22c4f",
+    "ref": "refs/tags/v1.0.0",
+    "version": "1.0.0",
+    "minor": "1_0"
+  },
+  "0.15.1": {
+    "rev": "a54d9212b89da61ec0dd4227ed24e59f37738fe5",
+    "ref": "refs/tags/v0.15.1",
+    "version": "0.15.1",
+    "minor": "0_15"
+  },
+  "0.15.0": {
+    "rev": "2f2a52a64874a0a5b6d5c1fab812a80e94d982bc",
+    "ref": "refs/tags/v0.15.0",
+    "version": "0.15.0",
+    "minor": "0_15"
+  },
+  "0.14.3": {
+    "rev": "82535feb90ba1a27ad12b9389d86b11b8311a618",
+    "ref": "refs/tags/v0.14.3",
+    "version": "0.14.3",
+    "minor": "0_14"
+  },
+  "0.14.2": {
+    "rev": "44b04120425c83984c867ee6b06974b7c139ba52",
+    "ref": "refs/tags/v0.14.2",
+    "version": "0.14.2",
+    "minor": "0_14"
+  },
+  "0.14.1": {
+    "rev": "22f3a50ebabfefd36be1a8472c8b78257df6affa",
+    "ref": "refs/tags/v0.14.1",
+    "version": "0.14.1",
+    "minor": "0_14"
+  },
+  "0.14.0": {
+    "rev": "9cff61493e9e3626e8d243dfe8aec07230a7fe73",
+    "ref": "refs/tags/v0.14.0",
+    "version": "0.14.0",
+    "minor": "0_14"
+  },
+  "0.13.3": {
+    "rev": "3c48099718cd718d25527875a407cc842cf72565",
+    "ref": "refs/tags/v0.13.3",
+    "version": "0.13.3",
+    "minor": "0_13"
+  },
+  "0.13.2": {
+    "rev": "7a24767137c596a84014a0ed1a8dde64e45f9666",
+    "ref": "refs/tags/v0.13.2",
+    "version": "0.13.2",
+    "minor": "0_13"
+  },
+  "0.13.1": {
+    "rev": "c03d42b0ccf38b31dcaef0cb7e9ea8851cb39907",
+    "ref": "refs/tags/v0.13.1",
+    "version": "0.13.1",
+    "minor": "0_13"
+  },
+  "0.13.0": {
+    "rev": "ada53524caa6ea27ffaa1a373f5c86bd6cadb0d5",
+    "ref": "refs/tags/v0.13.0",
+    "version": "0.13.0",
+    "minor": "0_13"
+  },
+  "0.12.5": {
+    "rev": "b07fbcf8b73e9353cc336107050a8aac5fdabd11",
+    "ref": "refs/tags/v0.12.5",
+    "version": "0.12.5",
+    "minor": "0_12"
+  },
+  "0.12.4": {
+    "rev": "543dfdeac80cfaf3483927c189cf9974f1e361eb",
+    "ref": "refs/tags/v0.12.4",
+    "version": "0.12.4",
+    "minor": "0_12"
+  },
+  "0.12.3": {
+    "rev": "0159de8a2137a79e472f61834fadf0c8ff839f8b",
+    "ref": "refs/tags/v0.12.3",
+    "version": "0.12.3",
+    "minor": "0_12"
+  },
+  "0.12.2": {
+    "rev": "ddc6b48a4988ea596456eb7b2129269b33d0a99f",
+    "ref": "refs/tags/v0.12.2",
+    "version": "0.12.2",
+    "minor": "0_12"
+  },
+  "0.12.1": {
+    "rev": "05beafd5bb7630e8bb1dcf1dd55e59c2256612ca",
+    "ref": "refs/tags/v0.12.1",
+    "version": "0.12.1",
+    "minor": "0_12"
+  },
+  "0.12.0": {
+    "rev": "6d3624147e234a646be3707602e920ac3d48cd17",
+    "ref": "refs/tags/v0.12.0",
+    "version": "0.12.0",
+    "minor": "0_12"
+  },
+  "0.11.2": {
+    "rev": "b70fc122f88ee5e2f3b68ca1e72461c649420d77",
+    "ref": "refs/tags/v0.11.2",
+    "version": "0.11.2",
+    "minor": "0_11"
+  },
+  "0.11.1": {
+    "rev": "7159da57807a7cdc51899f4c3be85d277e1fa080",
+    "ref": "refs/tags/v0.11.1",
+    "version": "0.11.1",
+    "minor": "0_11"
+  },
+  "0.11.0": {
+    "rev": "83ceee54b3d663fb38e354063269e3cb1910a99f",
+    "ref": "refs/tags/v0.11.0",
+    "version": "0.11.0",
+    "minor": "0_11"
+  },
+  "0.10.3": {
+    "rev": "6a770579105f7b58877ac1a0e0b039513a8e85fc",
+    "ref": "refs/tags/v0.10.3",
+    "version": "0.10.3",
+    "minor": "0_10"
+  },
+  "0.10.2": {
+    "rev": "e654f73762291ced87afbd2655f51d83730bb519",
+    "ref": "refs/tags/v0.10.2",
+    "version": "0.10.2",
+    "minor": "0_10"
+  },
+  "0.10.1": {
+    "rev": "0523789c334f48cc15fddae70af30a9f045aa617",
+    "ref": "refs/tags/v0.10.1",
+    "version": "0.10.1",
+    "minor": "0_10"
+  },
+  "0.10.0": {
+    "rev": "83591b9d7660f5267d8ecd6a5a7087ee22fda8d7",
+    "ref": "refs/tags/v0.10.0",
+    "version": "0.10.0",
+    "minor": "0_10"
+  },
+  "0.9.3": {
+    "rev": "32d4739dada6e4df753c13edf27f3120bc34d365",
+    "ref": "refs/tags/v0.9.3",
+    "version": "0.9.3",
+    "minor": "0_9"
+  },
+  "0.9.2": {
+    "rev": "a613445f78721950f954d891566f023f8d16a39d",
+    "ref": "refs/tags/v0.9.2",
+    "version": "0.9.2",
+    "minor": "0_9"
+  },
+  "0.9.1": {
+    "rev": "24c6623a2bbf23cbdc63f4bf3842df4ac75de052",
+    "ref": "refs/tags/v0.9.1",
+    "version": "0.9.1",
+    "minor": "0_9"
+  },
+  "0.9.0": {
+    "rev": "91e8e21242560f9a19910d8c1c6496482710ab69",
+    "ref": "refs/tags/v0.9.0",
+    "version": "0.9.0",
+    "minor": "0_9"
+  },
+  "0.8.3": {
+    "rev": "59d6448609ae788273976d0de1565b2598b9611e",
+    "ref": "refs/tags/v0.8.3",
+    "version": "0.8.3",
+    "minor": "0_8"
+  },
+  "0.8.2": {
+    "rev": "ed27611f48ba150404c95fe15f1d6058a4287330",
+    "ref": "refs/tags/v0.8.2",
+    "version": "0.8.2",
+    "minor": "0_8"
+  },
+  "0.8.1": {
+    "rev": "90ff71b0cc2dd28014adeae6cd7bf7f0bea9efc3",
+    "ref": "refs/tags/v0.8.1",
+    "version": "0.8.1",
+    "minor": "0_8"
+  },
+  "0.8.0": {
+    "rev": "437adc1dd0bec0999a7bdf69a85faba4d5a5a11e",
+    "ref": "refs/tags/v0.8.0",
+    "version": "0.8.0",
+    "minor": "0_8"
+  },
+  "0.7.2": {
+    "rev": "243433d9d3355f4e2f85939e1a3bb1b0ea92091a",
+    "ref": "refs/tags/v0.7.2",
+    "version": "0.7.2",
+    "minor": "0_7"
+  },
+  "0.7.1": {
+    "rev": "8cede65b0fc00ea69261460a95a203a6f29a6236",
+    "ref": "refs/tags/v0.7.1",
+    "version": "0.7.1",
+    "minor": "0_7"
+  },
+  "0.7.0": {
+    "rev": "833e9e97830caa2dad48321338772346da0114bc",
+    "ref": "refs/tags/v0.7.0",
+    "version": "0.7.0",
+    "minor": "0_7"
+  },
+  "0.6.0": {
+    "rev": "8d543cd122c0f5a5d12e15b1b8822b861aae8bef",
+    "ref": "refs/tags/v0.6.0",
+    "version": "0.6.0",
+    "minor": "0_6"
+  },
+  "0.5.0": {
+    "rev": "6052352b6281752b905b30eb5b08fac0f51f68cd",
+    "ref": "refs/tags/v0.5.0",
+    "version": "0.5.0",
+    "minor": "0_5"
+  }
+}

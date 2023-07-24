@@ -1,4 +1,4 @@
-{ name, version, parentAttrSet }:
+{ name, version, parentAttrSet, pkgs }:
 let
   allMinors = builtins.fromJSON (builtins.readFile ../${name}-lock.json);
   minorAttrs = allMinors.${version};
@@ -21,8 +21,12 @@ let
 
   customDerivation = version;
   versioned = if builtins.hasAttr version allMinors then versionedPackage else defaultMinor;
+
+  defaultName = { erlang = "customErlang"; elixir = "customElixir"; }.${name};
+  default = pkgs.${defaultName} or pkgs.${name};
 in
 {
   set = customDerivation;
   string = versioned;
+  null = default;
 }.${builtins.typeOf version}

@@ -2,6 +2,10 @@
 let
   allMinors = builtins.fromJSON (builtins.readFile ./${name}-lock.json);
   minorAttrs = allMinors.${version};
+  url = {
+    erlang = "https://github.com/erlang/otp.git";
+    elixir = "https://github.com/elixir-lang/elixir.git";
+  }.${name};
 
   # 1.14 -> 1_14
   # 26 -> 26
@@ -9,7 +13,10 @@ let
   defaultMinor = parentAttrSet."${name}_${defaultMinorVersion}";
   versionedPackage = parentAttrSet."${name}_${minorAttrs.minor}".override {
     version = minorAttrs.version;
-    sha256 = minorAttrs.sha256;
+    src = builtins.fetchGit {
+      inherit url;
+      inherit (minorAttrs) ref rev;
+    };
   };
 
   customDerivation = version;

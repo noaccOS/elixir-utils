@@ -1,6 +1,6 @@
 { name, version, parentAttrSet }:
 let
-  allMinors = builtins.fromJSON (builtins.readFile ./${name}-lock.json);
+  allMinors = builtins.fromJSON (builtins.readFile ../${name}-lock.json);
   minorAttrs = allMinors.${version};
   url = {
     erlang = "https://github.com/erlang/otp.git";

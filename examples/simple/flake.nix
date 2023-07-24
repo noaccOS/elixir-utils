@@ -1,6 +1,6 @@
 {
   description = "Simple elixir project with default elixir versions";
-  inputs.nixpkgs.url = nixpkgs/nixpkgs-unstable;
+  inputs.nixpkgs.url = "nixpkgs/nixpkgs-unstable";
   inputs.elixir-utils = {
     url = "github:noaccOS/elixir-utils";
     inputs.nixpkgs.follows = "nixpkgs";

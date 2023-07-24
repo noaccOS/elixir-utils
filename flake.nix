@@ -3,6 +3,9 @@
   inputs.nixpkgs.url = "nixpkgs/nixpkgs-unstable";
 
   outputs = { self, nixpkgs }:
+    let
+      pkgsx86_66-linux = nixpkgs.legacyPackages.x86_64-linux;
+    in
     {
       lib = import ./lib.nix nixpkgs.lib;
       templates = {
@@ -20,6 +23,7 @@
           description = "Elixir shell with elixir version from .tool-versions";
         };
       };
-      formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixpkgs-fmt;
+      formatter.x86_64-linux = pkgsx86_66-linux.nixpkgs-fmt;
+      packages.x86_64-linux.updateRefs = pkgsx86_66-linux.callPackage ./util/update_sha/default.nix { };
     };
 }

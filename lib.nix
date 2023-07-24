@@ -1,6 +1,6 @@
 lib:
 rec {
-  defaultSystems = lib.platform.unix;
+  defaultSystems = lib.platforms.unix;
   asdfOverlay = import lib/asdfOverlay.nix lib elixirDevShell;
   beamOverlay = import lib/beamOverlay.nix elixirDevShell;
   elixirDevShell = { pkgs, withLSP ? true, erlang ? null, elixir ? null, elixir-otp ? erlang }:

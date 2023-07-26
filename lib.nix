@@ -8,5 +8,9 @@ rec {
       overlay = beamOverlay { inherit erlang elixir elixir-otp; };
       finalPkgs = pkgs.extend overlay;
     in
-    finalPkgs.callPackage lib/elixirDevShell.nix { inherit withLSP; };
+    finalPkgs.callPackage lib/elixirDevShell.nix {
+      inherit withLSP;
+      erlang = finalPkgs.customErlang;
+      elixir = finalPkgs.customElixir;
+    };
 }

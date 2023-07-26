@@ -1,12 +1,12 @@
 lib:
 rec {
   defaultSystems = lib.platforms.unix;
-  asdfOverlay = import lib/asdfOverlay.nix lib elixirDevShell;
-  beamOverlay = import lib/beamOverlay.nix elixirDevShell;
+  asdfOverlay = import lib/asdfOverlay.nix lib;
+  beamOverlay = import lib/beamOverlay.nix;
   elixirDevShell = { pkgs, withLSP ? true, erlang ? null, elixir ? null, elixir-otp ? erlang }:
     let
-      beamOverlay = import lib/beamOverlay.nix { inherit erlang elixir elixir-otp; };
-      finalPkgs = pkgs.extend beamOverlay;
+      overlay = beamOverlay { inherit erlang elixir elixir-otp; };
+      finalPkgs = pkgs.extend overlay;
     in
     finalPkgs.callPackage lib/elixirDevShell.nix { inherit withLSP; };
 }

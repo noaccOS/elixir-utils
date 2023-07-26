@@ -1,4 +1,3 @@
-elixirDevShell:
 { erlang ? null
 , elixir ? null
 , elixir-otp ? erlang

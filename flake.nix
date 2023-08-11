@@ -1,13 +1,16 @@
 {
   description = "Utilities to setup an elixir project with nix";
   inputs.nixpkgs.url = "nixpkgs/nixpkgs-unstable";
+  inputs.flake-utils.url = "github:numtide/flake-utils";
 
-  outputs = { self, nixpkgs }:
-    let
-      pkgsx86_66-linux = nixpkgs.legacyPackages.x86_64-linux;
-    in
+  outputs = { self, nixpkgs, flake-utils }:
+  let
+    allSystems = nixpkgs.lib.platforms.unix;
+    defaultSystems = nixpkgs.lib.lists.intersectLists allSystems flake-utils.lib.defaultSystems;
+  in
+  (
     {
-      lib = import ./lib.nix nixpkgs.lib;
+      lib = import ./lib.nix nixpkgs.lib allSystems defaultSystems;
       templates = {
         default = self.templates.simple;
         simple = {
@@ -23,7 +26,14 @@
           description = "Elixir shell with elixir version from .tool-versions";
         };
       };
-      formatter.x86_64-linux = pkgsx86_66-linux.nixpkgs-fmt;
-      packages.x86_64-linux.updateRefs = pkgsx86_66-linux.callPackage ./util/update_sha/default.nix { };
-    };
+    } //
+      flake-utils.lib.eachSystem defaultSystems (system:
+        let pkgs = import nixpkgs { inherit system; }; in
+        {
+          formatter = pkgs.nixpkgs-fmt;
+          packages.updateRefs = pkgs.callPackage ./util/update_sha/default2.nix { };
+          devShells.default = self.lib.elixirDevShell { inherit pkgs; };
+          devShells.latest = self.lib.elixirDevShell { inherit pkgs; erlang = "26"; elixir = "1.15"; };
+        })
+    );
 }

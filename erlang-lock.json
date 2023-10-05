@@ -1,4 +1,16 @@
 {
+  "26.1.1": {
+    "rev": "ebb6adebb2713b0adb3515cc48bac10e64da395a",
+    "ref": "refs/tags/OTP-26.1.1",
+    "version": "26.1.1",
+    "minor": "26"
+  },
+  "26.1": {
+    "rev": "12518c5b979397094be0b9331a43a67fda5623b9",
+    "ref": "refs/tags/OTP-26.1",
+    "version": "26.1",
+    "minor": "26"
+  },
   "26.0.2": {
     "rev": "fd4ead0daece32d855676b36a16b4ba29809d6f0",
     "ref": "refs/tags/OTP-26.0.2",
@@ -34,6 +46,18 @@
     "ref": "refs/tags/OTP-26.0",
     "version": "26.0",
     "minor": "26"
+  },
+  "25.3.2.6": {
+    "rev": "3d67ccd6646af5ab8e74666bed59d43b12bd3098",
+    "ref": "refs/tags/OTP-25.3.2.6",
+    "version": "25.3.2.6",
+    "minor": "25"
+  },
+  "25.3.2.5": {
+    "rev": "4e08ee5b5ed8a64127d76306332915c5a10f5fda",
+    "ref": "refs/tags/OTP-25.3.2.5",
+    "version": "25.3.2.5",
+    "minor": "25"
   },
   "25.3.2.4": {
     "rev": "92cf47519f49fe963b059e7709a7c952e3455af2",

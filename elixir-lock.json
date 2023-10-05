@@ -1,4 +1,16 @@
 {
+  "1.15.6": {
+    "rev": "a16517edfbcd676bf66e93e77f63803d9fc80fd5",
+    "ref": "refs/tags/v1.15.6",
+    "version": "1.15.6",
+    "minor": "1_15"
+  },
+  "1.15.5": {
+    "rev": "9fd97c466301baa74b309f3ea62215a12911c4d8",
+    "ref": "refs/tags/v1.15.5",
+    "version": "1.15.5",
+    "minor": "1_15"
+  },
   "1.15.4": {
     "rev": "c521bdb91a77b36be16fdf18d632ad7719de4f91",
     "ref": "refs/tags/v1.15.4",

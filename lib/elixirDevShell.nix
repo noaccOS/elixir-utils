@@ -9,18 +9,20 @@
 , lib
 , stdenv
 , beam
-, withLSP ? true
+, elixir-ls
+, lsp ? elixir-ls
 }:
 
 let
   pkgsLinux = [ inotify-tools libnotify ];
   pkgsDarwin = with darwin.apple_sdk.frameworks; [ terminal-notifier CoreFoundation CoreServices ];
+  withLSP = lsp != null;
 in
 mkShell {
   packages = [
     erlang
     elixir
-  ] ++ lib.optional withLSP elixir-ls
+  ] ++ lib.optional withLSP lsp
   ++ lib.optionals stdenv.isLinux pkgsLinux
   ++ lib.optionals stdenv.isDarwin pkgsDarwin;
 
@@ -35,7 +37,7 @@ mkShell {
     export LANG=en_US.UTF-8
   '' + lib.optionalString withLSP ''
     # VS Code language server configuration
-    export ELS_INSTALL_PREFIX="${elixir-ls}/lib"
+    export ELS_INSTALL_PREFIX="${lsp}/lib"
 
     # VS Code extension crash workaround
     export ELS_MODE=language_server

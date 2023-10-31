@@ -31,7 +31,7 @@
         let pkgs = import nixpkgs { inherit system; }; in
         {
           formatter = pkgs.nixpkgs-fmt;
-          packages.updateRefs = pkgs.callPackage ./util/update_sha/default2.nix { };
+          packages.updateRefs = pkgs.callPackage ./util/update_sha/default.nix { };
           devShells.default = self.lib.elixirDevShell { inherit pkgs; };
           devShells.latest = self.lib.elixirDevShell { inherit pkgs; erlang = "26"; elixir = "1.15"; };
         })

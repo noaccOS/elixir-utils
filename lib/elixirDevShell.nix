@@ -10,18 +10,13 @@
 , stdenv
 , beam
 , lsp ? elixir-ls
-, src ? null
 }:
 
 let
   beamPkgs = beam.packagesWith erlang;
-  lspSetup = import ./lspSetupFor lsp;
+  lspSetup = import ./lspSetupFor.nix lsp;
   pkgsLinux = [ inotify-tools libnotify ];
   pkgsDarwin = with darwin.apple_sdk.frameworks; [ terminal-notifier CoreFoundation CoreServices ];
-  mixDeps = beamPkgs.fetchMixDeps {
-    name = "mix-deps";
-    inherit src;
-  };
 in
 mkShell {
   packages = [
@@ -40,8 +35,5 @@ mkShell {
     export PATH=$MIX_HOME/bin:$PATH
     export PATH=$HEX_HOME/bin:$PATH
     export LANG=en_US.UTF-8
-  '' + lspSetup + lib.optionalString (src != null) ''
-    rm -rf deps
-    ln -s ${mixDeps} deps
-  '';
+  '' + lspSetup;
 }

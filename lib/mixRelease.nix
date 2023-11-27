@@ -4,7 +4,8 @@
 , lib
 }:
 { src
-, depsHash ? lib.fakeSha256
+, depsHash ? null
+, depsHashFile ? null
 , phoenixSecret ? null
 , phoenixSecretFile ? null
 , ...
@@ -17,12 +18,19 @@ let
     then lib.strings.removeSuffix "\n" (builtins.readFile phoenixSecretFile)
     else null;
 
+  deps_hash =
+    if depsHash != null
+    then depsHash
+    else if depsHashFile != null
+    then lib.strings.removeSuffix "\n" (builtins.readFile depsHashFile)
+    else lib.fakeSha256;
+
   erlPackages = beam.packagesWith customElixirOTP;
   mixFodDeps = erlPackages.fetchMixDeps {
     pname = "mix-fod-deps";
     version = "0.0.1";
     inherit src;
-    sha256 = depsHash;
+    sha256 = deps_hash;
   };
 
   metadata = import ./mixRelease/metadata.nix {

@@ -30,6 +30,7 @@ let
     pname = "mix-fod-deps";
     version = "0.0.1";
     inherit src;
+    mixEnv = "";
     sha256 = deps_hash;
   };
 

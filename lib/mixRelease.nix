@@ -47,9 +47,4 @@ erlPackages.mixRelease (releaseAttrs // {
   inherit (metadata) pname version;
   inherit mixFodDeps;
   removeCookie = false;
-
-  # postBuild = ''
-  #   mix do deps.loadpaths --no-deps-check, phx.digest
-  #   mix phx.digest --no-deps-check
-  # '';
 })

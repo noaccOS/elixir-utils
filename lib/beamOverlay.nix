@@ -1,14 +1,16 @@
 { erlang ? null
 , elixir ? null
 , elixir-otp ? erlang
+, wxSupport ? true
 }:
 final: prev:
 let
   beamPackage = import ./beamPackage.nix;
+  beamAttrSet = if wxSupport then prev.beam else prev.beam_nox;
 
-  customElixirOTP = beamPackage { name = "erlang"; version = elixir-otp; parentAttrSet = prev; pkgs = prev; };
-  customErlang = beamPackage { name = "erlang"; version = erlang; parentAttrSet = prev; pkgs = prev; };
-  customElixir = beamPackage { name = "elixir"; version = elixir; parentAttrSet = (prev.beam.packagesWith customElixirOTP); pkgs = prev; };
+  customElixirOTP = beamPackage { name = "erlang"; version = elixir-otp; parentAttrSet = beamAttrSet.interpreters; pkgs = prev; };
+  customErlang = beamPackage { name = "erlang"; version = erlang; parentAttrSet = beamAttrSet.interpreters; pkgs = prev; };
+  customElixir = beamPackage { name = "elixir"; version = elixir; parentAttrSet = (beamAttrSet.packagesWith customElixirOTP); pkgs = prev; };
 in
 {
   inherit customElixir customErlang customElixirOTP;

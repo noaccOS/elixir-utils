@@ -1,5 +1,5 @@
 lib:
-{ src }:
+{ src, wxSupport ? true }:
 final: prev:
 let
   beamOverlay = import ./beamOverlay.nix;
@@ -20,4 +20,4 @@ let
 
   elixirOTPVersion = if erlangOTPVersion == elixirOTP then erlangVersion else elixirOTP;
 in
-beamOverlay { erlang = erlangVersion; elixir = elixirVersion; elixir-otp = elixirOTPVersion; } final prev
+beamOverlay { erlang = erlangVersion; elixir = elixirVersion; elixir-otp = elixirOTPVersion; inherit wxSupport; } final prev

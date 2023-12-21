@@ -1,4 +1,10 @@
 {
+  "1.16.0-rc.1": {
+    "rev": "81a12b777411e5fb3dc48cb314771c03202e0679",
+    "ref": "refs/tags/v1.16.0-rc.1",
+    "version": "1.16.0-rc.1",
+    "minor": "1_16"
+  },
   "1.16.0-rc.0": {
     "rev": "792d4cc6310c56eb9772056a6b5fb3339ce17b0f",
     "ref": "refs/tags/v1.16.0-rc.0",

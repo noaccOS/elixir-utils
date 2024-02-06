@@ -1,4 +1,10 @@
 {
+  "1.16.1": {
+    "rev": "e0658bb55a744e33a70c982c992666addc4feb38",
+    "ref": "refs/tags/v1.16.1",
+    "version": "1.16.1",
+    "minor": "1_16"
+  },
   "1.16.0-rc.1": {
     "rev": "81a12b777411e5fb3dc48cb314771c03202e0679",
     "ref": "refs/tags/v1.16.0-rc.1",
@@ -9,6 +15,12 @@
     "rev": "792d4cc6310c56eb9772056a6b5fb3339ce17b0f",
     "ref": "refs/tags/v1.16.0-rc.0",
     "version": "1.16.0-rc.0",
+    "minor": "1_16"
+  },
+  "1.16.0": {
+    "rev": "38ddc98fef7faf6f4666703dcd9c99105e6388d2",
+    "ref": "refs/tags/v1.16.0",
+    "version": "1.16.0",
     "minor": "1_16"
   },
   "1.15.7": {

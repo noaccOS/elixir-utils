@@ -1,4 +1,52 @@
 {
+  "27.0-rc3": {
+    "rev": "89674fb8a4f2930115022da24cb93b8a7d1741d5",
+    "ref": "refs/tags/OTP-27.0-rc3",
+    "version": "27.0-rc3",
+    "minor": "27"
+  },
+  "27.0-rc2": {
+    "rev": "dce07137a4ab3f91fbf6d642102519d80dbc0ded",
+    "ref": "refs/tags/OTP-27.0-rc2",
+    "version": "27.0-rc2",
+    "minor": "27"
+  },
+  "27.0-rc1": {
+    "rev": "a8cc13a1ec986c25fe10d71a2d450de1dcef1a4b",
+    "ref": "refs/tags/OTP-27.0-rc1",
+    "version": "27.0-rc1",
+    "minor": "27"
+  },
+  "27.0": {
+    "rev": "f1c72ea22f0d0479807fbe543191f7a1ef325838",
+    "ref": "refs/tags/OTP-27.0",
+    "version": "27.0",
+    "minor": "27"
+  },
+  "26.2.5": {
+    "rev": "42a080269aae2698676ef8d6ebf19e52f0b569d7",
+    "ref": "refs/tags/OTP-26.2.5",
+    "version": "26.2.5",
+    "minor": "26"
+  },
+  "26.2.4": {
+    "rev": "f3d69b252a2bb9750755e7c4afebac4e4e1eb5f8",
+    "ref": "refs/tags/OTP-26.2.4",
+    "version": "26.2.4",
+    "minor": "26"
+  },
+  "26.2.3": {
+    "rev": "7deebbf972427aea5445703fff5f14293d3bf790",
+    "ref": "refs/tags/OTP-26.2.3",
+    "version": "26.2.3",
+    "minor": "26"
+  },
+  "26.2.2": {
+    "rev": "e80b73874166da1b4694d8b1edd90f0abd9006fe",
+    "ref": "refs/tags/OTP-26.2.2",
+    "version": "26.2.2",
+    "minor": "26"
+  },
   "26.2.1": {
     "rev": "202ead5e2586c1f45997edf8307bedbd9a6164d7",
     "ref": "refs/tags/OTP-26.2.1",
@@ -64,6 +112,30 @@
     "ref": "refs/tags/OTP-26.0",
     "version": "26.0",
     "minor": "26"
+  },
+  "25.3.2.12": {
+    "rev": "95330d7b611561836d15908ae6a30c6a24c0656e",
+    "ref": "refs/tags/OTP-25.3.2.12",
+    "version": "25.3.2.12",
+    "minor": "25"
+  },
+  "25.3.2.11": {
+    "rev": "699d257f27e8585b0923387c5089d7afefd5a101",
+    "ref": "refs/tags/OTP-25.3.2.11",
+    "version": "25.3.2.11",
+    "minor": "25"
+  },
+  "25.3.2.10": {
+    "rev": "ca8662fd51ace8d3d166f80323ed9a3c6a2bb62b",
+    "ref": "refs/tags/OTP-25.3.2.10",
+    "version": "25.3.2.10",
+    "minor": "25"
+  },
+  "25.3.2.9": {
+    "rev": "190dd42374ddee532bc953aa845e8de6e34e324d",
+    "ref": "refs/tags/OTP-25.3.2.9",
+    "version": "25.3.2.9",
+    "minor": "25"
   },
   "25.3.2.8": {
     "rev": "ad271ae4f2b2e6593458e5a97ca54c2c0d4383f8",
@@ -226,6 +298,18 @@
     "ref": "refs/tags/OTP-25.0",
     "version": "25.0",
     "minor": "25"
+  },
+  "24.3.4.17": {
+    "rev": "50d75427d0593683fab2ff1d11e910e9cec741b2",
+    "ref": "refs/tags/OTP-24.3.4.17",
+    "version": "24.3.4.17",
+    "minor": "24"
+  },
+  "24.3.4.16": {
+    "rev": "7f7581eda8c4e9f9e816aa5beecfcb919b672600",
+    "ref": "refs/tags/OTP-24.3.4.16",
+    "version": "24.3.4.16",
+    "minor": "24"
   },
   "24.3.4.15": {
     "rev": "95a94e38fbeed9c6814f2a61095ecf6f300552a7",
@@ -472,6 +556,12 @@
     "ref": "refs/tags/OTP-24.0",
     "version": "24.0",
     "minor": "24"
+  },
+  "23.3.4.20": {
+    "rev": "bc796a560826ee3925d6f9c7ad57c11dcfee7ad3",
+    "ref": "refs/tags/OTP-23.3.4.20",
+    "version": "23.3.4.20",
+    "minor": "23"
   },
   "23.3.4.19": {
     "rev": "c0c3227bf475e35ca50ecf12cfc7c0d64ebc7036",
@@ -784,6 +874,12 @@
     "ref": "refs/tags/OTP-23.0",
     "version": "23.0",
     "minor": "23"
+  },
+  "22.3.4.27": {
+    "rev": "0c657d46238ee1b299b0105e987b25b0f697d794",
+    "ref": "refs/tags/OTP-22.3.4.27",
+    "version": "22.3.4.27",
+    "minor": "22"
   },
   "22.3.4.26": {
     "rev": "4880a67e935309f0ed8fb3ed0f1aefd7f251d69f",

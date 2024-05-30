@@ -1,4 +1,22 @@
 {
+  "1.17.0-rc.0": {
+    "rev": "a2600eace138aaff04f67db70485e44e2a372be7",
+    "ref": "refs/tags/v1.17.0-rc.0",
+    "version": "1.17.0-rc.0",
+    "minor": "1_17"
+  },
+  "1.16.3": {
+    "rev": "327063cc8485692f2b902553fb599a2bef5a0f8f",
+    "ref": "refs/tags/v1.16.3",
+    "version": "1.16.3",
+    "minor": "1_16"
+  },
+  "1.16.2": {
+    "rev": "41f6ee3f2e605f7066b23d96362e3b0c620c565b",
+    "ref": "refs/tags/v1.16.2",
+    "version": "1.16.2",
+    "minor": "1_16"
+  },
   "1.16.1": {
     "rev": "e0658bb55a744e33a70c982c992666addc4feb38",
     "ref": "refs/tags/v1.16.1",
@@ -22,6 +40,12 @@
     "ref": "refs/tags/v1.16.0",
     "version": "1.16.0",
     "minor": "1_16"
+  },
+  "1.15.8": {
+    "rev": "29fdd09c0fcb5f029d43591665de35491f7378dd",
+    "ref": "refs/tags/v1.15.8",
+    "version": "1.15.8",
+    "minor": "1_15"
   },
   "1.15.7": {
     "rev": "927b10df80ee1c1c7396e68efe00d06bc3e80420",

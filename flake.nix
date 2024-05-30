@@ -33,7 +33,7 @@
           formatter = pkgs.nixpkgs-fmt;
           packages.updateRefs = pkgs.callPackage ./util/update_sha/default.nix { };
           devShells.default = self.lib.devShell { inherit pkgs; };
-          devShells.latest = self.lib.devShell { inherit pkgs; erlang = "26"; elixir = "1.15"; };
+          devShells.latest = self.lib.devShell { inherit pkgs; erlang = "27"; elixir = "1.16"; };
         })
     );
 }

@@ -5,6 +5,8 @@ rec {
   inherit allSystems defaultSystems;
   asdfOverlay = import lib/asdfOverlay.nix lib;
   beamOverlay = import lib/beamOverlay.nix;
+  asdfPakcages = import lib/asdfPakcages.nix lib;
+  beamPackages = import lib/beamPackages.nix;
 
   devShell = { pkgs, lsp ? pkgs.elixir-ls, erlang ? null, elixir ? null, elixir-otp ? erlang, wxSupport ? true }:
     let

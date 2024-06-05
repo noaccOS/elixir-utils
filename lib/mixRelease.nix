@@ -1,32 +1,36 @@
-{ customElixir
-, customElixirOTP
-, beam
-, lib
+{
+  pkgs,
+  beamPackages,
+  lib,
 }:
-{ src
-, depsHash ? null
-, depsHashFile ? null
-, phoenixSecret ? null
-, phoenixSecretFile ? null
-, ...
+{
+  src,
+  depsHash ? null,
+  depsHashFile ? null,
+  depsFile ? null,
+  depsOverrides ? (x: y: { }),
+  # phoenixSecret ? null,
+  # phoenixSecretFile ? null,
+  ...
 }@attrs:
 let
-  phx_secret =
-    if phoenixSecret != null
-    then phoenixSecret
-    else if phoenixSecretFile != null
-    then lib.strings.removeSuffix "\n" (builtins.readFile phoenixSecretFile)
-    else null;
+  # phx_secret =
+  #   if phoenixSecret != null then
+  #     phoenixSecret
+  #   else if phoenixSecretFile != null then
+  #     lib.strings.removeSuffix "\n" (builtins.readFile phoenixSecretFile)
+  #   else
+  #     null;
 
   deps_hash =
-    if depsHash != null
-    then depsHash
-    else if depsHashFile != null
-    then lib.strings.removeSuffix "\n" (builtins.readFile depsHashFile)
-    else lib.fakeSha256;
+    if depsHash != null then
+      depsHash
+    else if depsHashFile != null then
+      lib.strings.removeSuffix "\n" (builtins.readFile depsHashFile)
+    else
+      lib.fakeSha256;
 
-  erlPackages = beam.packagesWith customElixirOTP;
-  mixFodDeps = erlPackages.fetchMixDeps {
+  mixFodDeps = beamPackages.fetchMixDeps {
     pname = "mix-fod-deps";
     version = "0.0.1";
     inherit src;
@@ -34,17 +38,26 @@ let
     sha256 = deps_hash;
   };
 
-  metadata = import ./mixRelease/metadata.nix {
-    inherit src mixFodDeps lib;
-    beamPackages = erlPackages;
-    phoenixSecret = phx_secret;
+  mixNixDeps = import depsFile {
+    inherit beamPackages lib;
+    overrides = depsOverrides;
   };
 
-  customAttrs = [ "phoenixSecret" "phoenixSecretFile" ];
+  deps = if depsFile != null then { inherit mixNixDeps; } else { inherit mixFodDeps; };
+
+  metadata = pkgs.callPackage ./mixRelease/metadata.nix { inherit src; };
+
+  customAttrs = [
+    "phoenixSecret"
+    "phoenixSecretFile"
+  ];
   releaseAttrs = builtins.removeAttrs attrs customAttrs;
 in
-erlPackages.mixRelease (releaseAttrs // {
-  inherit (metadata) pname version;
-  inherit mixFodDeps;
-  removeCookie = false;
-})
+beamPackages.mixRelease (
+  releaseAttrs
+  // deps
+  // {
+    inherit (metadata) pname version;
+    removeCookie = false;
+  }
+)

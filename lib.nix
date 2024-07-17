@@ -1,4 +1,6 @@
-lib: rec {
+lib: allSystems: defaultSystems: rec {
+  inherit allSystems defaultSystems;
+
   asdfOverlay = import lib/asdfOverlay.nix lib;
   beamOverlay = import lib/beamOverlay.nix;
   asdfPakcages = import lib/asdfPakcages.nix lib;
@@ -8,8 +10,8 @@ lib: rec {
     {
       pkgs,
       lsp ? pkgs.elixir-ls,
-      erlang ? null,
-      elixir ? null,
+      erlang ? pkgs.erlang,
+      elixir ? pkgs.elixir,
       wxSupport ? true,
     }:
     let
@@ -26,7 +28,7 @@ lib: rec {
       wxSupport ? true,
     }:
     let
-      asdf = import ./parseASDF.nix lib (src + "/.tool-versions");
+      asdf = import lib/parseASDF.nix lib (src + "/.tool-versions");
     in
     pkgs.callPackage devShell {
       inherit lsp wxSupport;

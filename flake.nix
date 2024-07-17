@@ -1,18 +1,24 @@
 {
   description = "Utilities to setup an elixir project with nix";
-  inputs.nixpkgs.url = "nixpkgs/nixpkgs-unstable";
-  inputs.flake-utils.url = "github:numtide/flake-utils";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+  inputs.flake-parts.url = "github:hercules-ci/flake-parts";
+  inputs.flake-parts.inputs.nixpkgs-lib.follows = "nixpkgs";
+  inputs.systems.url = "github:nix-systems/default";
 
-  outputs = { self, nixpkgs, flake-utils }:
-  let
-    allSystems = nixpkgs.lib.platforms.unix;
-    defaultSystems = nixpkgs.lib.lists.intersectLists allSystems flake-utils.lib.defaultSystems;
-  in
-  (
-    {
-      lib = import ./lib.nix nixpkgs.lib allSystems defaultSystems;
-      templates = {
-        default = self.templates.simple;
+  outputs =
+    inputs:
+    inputs.flake-parts.lib.mkFlake { inherit inputs; } {
+      systems = inputs.self.lib.defaultSystems;
+      flake.lib =
+        let
+          allSystems = inputs.nixpkgs.lib.platforms.unix;
+          defaultGlobalSystems = import inputs.systems;
+          defaultSystems = inputs.nixpkgs.lib.lists.intersectLists allSystems defaultGlobalSystems;
+        in
+        import ./lib.nix inputs.nixpkgs.lib allSystems defaultSystems;
+
+      flake.templates = {
+        default = inputs.self.templates.simple;
         simple = {
           path = examples/simple;
           description = "Simple elixir shell with default elixir version";
@@ -25,15 +31,26 @@
           path = examples/asdf;
           description = "Elixir shell with elixir version from .tool-versions";
         };
+        overlay = {
+          path = examples/overlay;
+          description = "Elixir overlay and shell with custom elixir version";
+        };
       };
-    } //
-      flake-utils.lib.eachSystem defaultSystems (system:
-        let pkgs = import nixpkgs { inherit system; }; in
+
+      flake.overlays.default = {
+
+      };
+
+      perSystem =
+        { self', pkgs, ... }:
         {
-          formatter = pkgs.nixpkgs-fmt;
+          formatter = pkgs.nixfmt-rfc-style;
           packages.updateRefs = pkgs.callPackage ./util/update_sha/default.nix { };
-          devShells.default = self.lib.devShell { inherit pkgs; };
-          devShells.latest = self.lib.devShell { inherit pkgs; erlang = "27"; elixir = "1.16"; };
-        })
-    );
+          devShells.default = pkgs.callPackage inputs.self.lib.devShell { };
+          devShells.latest = pkgs.callPackage inputs.self.lib.devShell {
+            erlang = "27";
+            elixir = "1.16";
+          };
+        };
+    };
 }

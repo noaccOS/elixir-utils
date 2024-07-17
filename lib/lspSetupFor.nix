@@ -13,4 +13,5 @@ let
       export PATH="$ELS_INSTALL_PREFIX:$PATH"
     '';
   };
-in outputs.${lsp.pname or ""} or ""
+in
+outputs.${lsp.pname or ""} or ""

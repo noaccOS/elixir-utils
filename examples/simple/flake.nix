@@ -1,15 +1,21 @@
 {
-  description = "Simple elixir project with default elixir versions";
-  inputs.nixpkgs.url = "nixpkgs/nixpkgs-unstable";
-  inputs.elixir-utils = {
-    url = "github:noaccOS/elixir-utils";
-    inputs.nixpkgs.follows = "nixpkgs";
+  description = "Simple elixir shell with default elixir version";
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    elixir-utils = {
+      url = "github:noaccOS/elixir-utils";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    flake-parts.url = "github:hercules-ci/flake-parts";
   };
-  outputs = { self, nixpkgs, elixir-utils }:
-    let
-      pkgs = import nixpkgs { system = "x86_64-linux"; };
-    in
-    {
-      devShell.default = elixir-utils.lib.elixirDevShell { inherit pkgs; };
+  outputs =
+    { elixir-utils, ... }@inputs:
+    inputs.flake-parts.lib.mkFlake { inherit inputs; } {
+      system = elixir-utils.lib.defaultSystems;
+      perSystem =
+        { pkgs, ... }:
+        {
+          devShells.default = pkgs.callPackage elixir-utils.lib.devShell { };
+        };
     };
 }

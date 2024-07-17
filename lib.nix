@@ -1,4 +1,6 @@
-lib: rec {
+lib: allSystems: defaultSystems: rec {
+  inherit allSystems defaultSystems;
+
   asdfOverlay = import lib/asdfOverlay.nix lib;
   beamOverlay = import lib/beamOverlay.nix;
   asdfPakcages = import lib/asdfPakcages.nix lib;

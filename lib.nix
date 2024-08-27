@@ -10,8 +10,8 @@ lib: allSystems: defaultSystems: rec {
     {
       pkgs,
       lsp ? pkgs.elixir-ls,
-      erlang ? null,
-      elixir ? null,
+      erlang ? pkgs.erlang,
+      elixir ? pkgs.elixir,
       wxSupport ? true,
     }:
     let

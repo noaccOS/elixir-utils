@@ -5,7 +5,7 @@
 }:
 final: prev:
 let
-  beamPackages = import ./beamPackages { inherit erlang elixir wxSupport; } prev;
+  beamPackages = import ./beamPackages.nix { inherit erlang elixir wxSupport; } prev;
 in
 {
   inherit beamPackages;

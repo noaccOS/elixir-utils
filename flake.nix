@@ -7,7 +7,7 @@
   outputs =
     inputs:
     inputs.flake-parts.lib.mkFlake { inherit inputs; } {
-      systems = import inputs.systems;
+      systems = inputs.self.lib.defaultSystems;
       flake.lib =
         let
           allSystems = inputs.nixpgks.lib.platforms.unix;
@@ -44,8 +44,8 @@
         {
           formatter = pkgs.nixfmt-rfc-style;
           packages.updateRefs = pkgs.callPackage ./util/update_sha/default.nix { };
-          devShells.default = pkgs.callPackage self'.lib.devShell { };
-          devShells.latest = pkgs.callPackage self'.lib.devShell {
+          devShells.default = pkgs.callPackage inputs.self.lib.devShell { };
+          devShells.latest = pkgs.callPackage inputs.self.lib.devShell {
             erlang = "27";
             elixir = "1.16";
           };

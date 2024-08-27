@@ -16,7 +16,7 @@
       ...
     }@inputs:
     inputs.flake-parts.lib.mkFlake { inherit inputs; } {
-      system = elixir-utils.lib.defaultSystems;
+      systems = elixir-utils.lib.defaultSystems;
       flake.overlays.default = elixir-utils.lib.beamOverlay {
         elixir = "1.15.3";
         erlang = "26.0.2";

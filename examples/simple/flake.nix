@@ -11,7 +11,7 @@
   outputs =
     { elixir-utils, ... }@inputs:
     inputs.flake-parts.lib.mkFlake { inherit inputs; } {
-      system = elixir-utils.lib.defaultSystems;
+      systems = elixir-utils.lib.defaultSystems;
       perSystem =
         { pkgs, ... }:
         {

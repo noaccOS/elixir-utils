@@ -1,4 +1,16 @@
 {
+  "1.17.2": {
+    "rev": "47abe2d107e654ccede845356773bcf6e11ef7cb",
+    "ref": "refs/tags/v1.17.2",
+    "version": "1.17.2",
+    "minor": "1_17"
+  },
+  "1.17.1": {
+    "rev": "6bfb95ab884f11475de6da3f99c6528938e025a8",
+    "ref": "refs/tags/v1.17.1",
+    "version": "1.17.1",
+    "minor": "1_17"
+  },
   "1.17.0-rc.1": {
     "rev": "ac64fba4eba654c3ae402a1e30f5a8bb185b88d7",
     "ref": "refs/tags/v1.17.0-rc.1",
@@ -9,6 +21,12 @@
     "rev": "a2600eace138aaff04f67db70485e44e2a372be7",
     "ref": "refs/tags/v1.17.0-rc.0",
     "version": "1.17.0-rc.0",
+    "minor": "1_17"
+  },
+  "1.17.0": {
+    "rev": "0b8623a032555d77cbd7cba815736b0ca1335e51",
+    "ref": "refs/tags/v1.17.0",
+    "version": "1.17.0",
     "minor": "1_17"
   },
   "1.16.3": {

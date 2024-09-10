@@ -3,6 +3,7 @@
   elixir,
   src,
   lib,
+  ...
 }:
 let
   metadata_derivation = mkDerivation {

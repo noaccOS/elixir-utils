@@ -1,8 +1,9 @@
 {
-  mkDerivation,
   elixir,
-  src,
   lib,
+  src,
+  stdenv,
+  mkDerivation ? stdenv.mkDerivation,
   ...
 }:
 let

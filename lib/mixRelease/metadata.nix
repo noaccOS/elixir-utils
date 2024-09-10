@@ -18,8 +18,8 @@ let
     installPhase = ''
       mkdir -p $out/share
 
-      mix run -e 'IO.puts Mix.Project.config[:app]' --no-deps-check --no-start --no-compile --no-elixir-version-check > $out/share/pname
-      mix run -e 'IO.puts Mix.Project.config[:version]' --no-deps-check --no-start --no-compile --no-elixir-version-check > $out/share/version
+      mix run -e 'IO.puts Mix.Project.config[:app]' --no-deps-check --no-start --no-compile --no-elixir-version-check > $out/share/pname || true
+      mix run -e 'IO.puts Mix.Project.config[:version]' --no-deps-check --no-start --no-compile --no-elixir-version-check > $out/share/version || true
     '';
   };
 

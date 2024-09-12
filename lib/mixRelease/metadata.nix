@@ -4,6 +4,7 @@
   src,
   stdenv,
   mkDerivation ? stdenv.mkDerivation,
+  hex,
   ...
 }:
 let
@@ -13,7 +14,7 @@ let
     inherit src;
 
     doBuild = false;
-    nativeBuildInputs = [ elixir ];
+    nativeBuildInputs = [ elixir hex ];
 
     installPhase = ''
       mkdir -p $out/share

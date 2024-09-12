@@ -45,7 +45,7 @@ let
 
   deps = if depsFile != null then { inherit mixNixDeps; } else { inherit mixFodDeps; };
 
-  metadata = pkgs.callPackage ./mixRelease/metadata.nix { inherit src; };
+  metadata = pkgs.callPackage ./mixRelease/metadata.nix { inherit src; hex = beamPackages.hex;};
 
   customAttrs = [
     "phoenixSecret"

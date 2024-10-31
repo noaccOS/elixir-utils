@@ -4,6 +4,7 @@ function elixir_vers() {
     echo '{'
     git ls-remote --tags --refs https://github.com/elixir-lang/elixir.git |
         sort -V -u -r -k2 |
+        sed '/refs\/tags\/main-latest/d' |
         sed -r 's/^(\w+)\s+(refs\/tags\/v(([0-9]+)\.([0-9]+).*))$/"\3":{"rev":"\1","ref":"\2","version":"\3","minor":"\4_\5"}/' |
         paste -sd ','
     echo '}'

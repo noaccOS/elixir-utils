@@ -15,7 +15,7 @@
       perSystem =
         { pkgs, ... }:
         {
-          devShells.default = pkgs.callPackage elixir-utils.lib.asdfDevShell { src = ./.; };
+          devShells.default = pkgs.callPackage elixir-utils.lib.asdfDevShell { src = ./.tool-versions; };
         };
     };
 }

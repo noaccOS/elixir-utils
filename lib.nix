@@ -31,11 +31,15 @@ lib: allSystems: defaultSystems: rec {
   asdfDevShell =
     {
       pkgs,
-      src,
       ...
     }@args:
+    assert (
+      lib.assertMsg (!(args ? src)) ''
+        "src" has been deprecated in favor of "toolVersions". toolVersions should be the .tool-versions file itself.
+      ''
+    );
     let
-      asdf = import lib/parseASDF.nix lib (src + "/.tool-versions");
+      asdf = import lib/parseASDF.nix lib args.toolVersions;
       devShellArgs = args // {
         inherit (asdf) elixir erlang;
       };

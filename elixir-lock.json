@@ -1,4 +1,10 @@
 {
+  "1.17.3": {
+    "rev": "78f63d08313677a680868685701ae79a2459dcc1",
+    "ref": "refs/tags/v1.17.3",
+    "version": "1.17.3",
+    "minor": "1_17"
+  },
   "1.17.2": {
     "rev": "47abe2d107e654ccede845356773bcf6e11ef7cb",
     "ref": "refs/tags/v1.17.2",

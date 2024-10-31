@@ -10,8 +10,9 @@
   darwin,
   lib,
   stdenv,
-  beam,
   lsp ? elixir-ls,
+  extraArgs ? {},
+  ...
 }:
 
 let
@@ -26,12 +27,13 @@ let
     CoreServices
   ];
 in
-mkShell {
+mkShell (extraArgs // {
   packages =
     [
       erlang
       elixir
     ]
+    ++ (extraArgs.packages or [])
     ++ lib.optional (lsp != null) lsp
     ++ lib.optionals stdenv.isLinux pkgsLinux
     ++ lib.optionals stdenv.isDarwin pkgsDarwin;
@@ -47,5 +49,6 @@ mkShell {
       export PATH=$HEX_HOME/bin:$PATH
       export LANG=en_US.UTF-8
     ''
-    + lspSetup;
-}
+    + lspSetup
+    + (extraArgs.shellHook or "");
+})

@@ -1,4 +1,34 @@
 {
+  "1.18.2": {
+    "rev": "175c8243b23c4cfcaaa99e60b030085bfef8e9a0",
+    "ref": "refs/tags/v1.18.2",
+    "version": "1.18.2",
+    "minor": "1_18"
+  },
+  "1.18.1": {
+    "rev": "6a3301f237ad6dff6f66c9ded91426a23abfe757",
+    "ref": "refs/tags/v1.18.1",
+    "version": "1.18.1",
+    "minor": "1_18"
+  },
+  "1.18.0-rc.0": {
+    "rev": "66c5908619f2ee9b4b1113e0302b00b5a59a5abb",
+    "ref": "refs/tags/v1.18.0-rc.0",
+    "version": "1.18.0-rc.0",
+    "minor": "1_18"
+  },
+  "1.18.0": {
+    "rev": "3564c68cdced43fa615acfef9057da447ee15476",
+    "ref": "refs/tags/v1.18.0",
+    "version": "1.18.0",
+    "minor": "1_18"
+  },
+  "1.18-latest": {
+    "rev": "b615c8435abf4a2af71c9de93222ce47a5d82bfa",
+    "ref": "refs/tags/v1.18-latest",
+    "version": "1.18-latest",
+    "minor": "1_18"
+  },
   "1.17.3": {
     "rev": "78f63d08313677a680868685701ae79a2459dcc1",
     "ref": "refs/tags/v1.17.3",

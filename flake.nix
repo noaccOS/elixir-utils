@@ -49,7 +49,7 @@
           devShells.default = pkgs.callPackage inputs.self.lib.devShell { };
           devShells.latest = pkgs.callPackage inputs.self.lib.devShell {
             erlang = "27";
-            elixir = "1.16";
+            elixir = "1.18";
           };
         };
     };

@@ -24,8 +24,10 @@ let
   };
 in
 basePackages.extend (
-  _: _: {
-    erlang = erlangPkg;
+  _: prev: {
     elixir = elixirPkg;
+
+    # rebar3's checkPhase is long and sometimes deadlocks
+    rebar3 = prev.rebar3.overrideAttrs { doCheck = false; };
   }
 )

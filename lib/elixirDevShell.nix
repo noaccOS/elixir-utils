@@ -2,7 +2,6 @@
   erlang,
   elixir,
   beamPackages,
-  elixir-ls,
   mkShell,
   inotify-tools,
   libnotify,
@@ -10,7 +9,7 @@
   darwin,
   lib,
   stdenv,
-  lsp ? elixir-ls,
+  lsp ? null,
   extraArgs ? {},
   ...
 }:

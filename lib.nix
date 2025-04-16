@@ -9,7 +9,7 @@ lib: allSystems: defaultSystems: rec {
   devShell =
     {
       pkgs,
-      lsp ? pkgs.elixir-ls,
+      lsp ? null,
       erlang ? pkgs.erlang,
       elixir ? pkgs.elixir,
       wxSupport ? true,
@@ -18,6 +18,11 @@ lib: allSystems: defaultSystems: rec {
     let
       overlay = beamOverlay { inherit erlang elixir wxSupport; };
       finalPkgs = pkgs.extend overlay;
+      lspPackage =
+        {
+          elixir-ls = finalPkgs.elixir-ls;
+        }
+        .${lsp} or null;
       extraArgs = lib.removeAttrs args [
         "pkgs"
         "lsp"
@@ -26,7 +31,10 @@ lib: allSystems: defaultSystems: rec {
         "wxSupport"
       ];
     in
-    finalPkgs.callPackage lib/elixirDevShell.nix { inherit lsp extraArgs; };
+    finalPkgs.callPackage lib/elixirDevShell.nix {
+      inherit extraArgs;
+      lsp = lspPackage;
+    };
 
   asdfDevShell =
     {

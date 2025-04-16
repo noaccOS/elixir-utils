@@ -1,4 +1,10 @@
 {
+  "1.18.3": {
+    "rev": "e35ffc5a903bff3b595e323eb1ac12c4ecd515ad",
+    "ref": "refs/tags/v1.18.3",
+    "version": "1.18.3",
+    "minor": "1_18"
+  },
   "1.18.2": {
     "rev": "175c8243b23c4cfcaaa99e60b030085bfef8e9a0",
     "ref": "refs/tags/v1.18.2",
@@ -24,7 +30,7 @@
     "minor": "1_18"
   },
   "1.18-latest": {
-    "rev": "b615c8435abf4a2af71c9de93222ce47a5d82bfa",
+    "rev": "e34495e304de1b1758b71d20c6859584b365fee4",
     "ref": "refs/tags/v1.18-latest",
     "version": "1.18-latest",
     "minor": "1_18"

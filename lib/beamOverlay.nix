@@ -6,8 +6,14 @@
 final: prev:
 let
   beamPackages = import ./beamPackages.nix { inherit erlang elixir wxSupport; } prev;
+
+  lexical = prev.lexical.override {
+    inherit beamPackages;
+    inherit (beamPackages) elixir;
+  };
 in
 {
+  inherit lexical;
   inherit beamPackages;
   inherit (beamPackages)
     elixir

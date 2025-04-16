@@ -21,6 +21,7 @@ lib: allSystems: defaultSystems: rec {
       lspPackage =
         {
           elixir-ls = finalPkgs.elixir-ls;
+          lexical = finalPkgs.lexical;
         }
         .${lsp} or null;
       extraArgs = lib.removeAttrs args [

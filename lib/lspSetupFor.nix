@@ -9,8 +9,13 @@ let
       export ELS_MODE=language_server
       export ELS_SCRIPT="ElixirLS.LanguageServer.CLI.main()"
 
-      # Emacs
+      # Emacs/Helix
       export PATH="$ELS_INSTALL_PREFIX:$PATH"
+    '';
+
+    lexical = ''
+      # Emacs/Helix
+      export PATH="${lsp}/bin:$PATH"
     '';
   };
 in

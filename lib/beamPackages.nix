@@ -6,7 +6,7 @@
 pkgs:
 let
   beamPackage = import ./beamPackage.nix;
-  beamAttrSet = if wxSupport then pkgs.beam else pkgs.beam_nox;
+  beamAttrSet = if wxSupport then pkgs.beam else pkgs.beam_minimal;
 
   erlangPkg = beamPackage {
     name = "erlang";

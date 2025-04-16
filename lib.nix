@@ -3,7 +3,7 @@ lib: allSystems: defaultSystems: rec {
 
   asdfOverlay = import lib/asdfOverlay.nix lib;
   beamOverlay = import lib/beamOverlay.nix;
-  asdfPakcages = import lib/asdfPakcages.nix lib;
+  asdfPackages = import lib/asdfPakcages.nix lib;
   beamPackages = import lib/beamPackages.nix;
 
   devShell =

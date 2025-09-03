@@ -1,4 +1,52 @@
 {
+  "1.19.2": {
+    "rev": "87cbf06ff1323fb4d67d1f3984120eef244e4005",
+    "ref": "refs/tags/v1.19.2",
+    "version": "1.19.2",
+    "minor": "1_19"
+  },
+  "1.19.1": {
+    "rev": "b1a7afd0619c6d588c52183bace1ae24958dd959",
+    "ref": "refs/tags/v1.19.1",
+    "version": "1.19.1",
+    "minor": "1_19"
+  },
+  "1.19.0-rc.2": {
+    "rev": "957f84b7cd689d00e8d9eb04a8c56e0438cace5c",
+    "ref": "refs/tags/v1.19.0-rc.2",
+    "version": "1.19.0-rc.2",
+    "minor": "1_19"
+  },
+  "1.19.0-rc.1": {
+    "rev": "f642b30e4200b4da0d0930c4be2c5bac4f0dc581",
+    "ref": "refs/tags/v1.19.0-rc.1",
+    "version": "1.19.0-rc.1",
+    "minor": "1_19"
+  },
+  "1.19.0-rc.0": {
+    "rev": "2a9a4f2cab4e84fa76980ca2ba7a2dff3622937a",
+    "ref": "refs/tags/v1.19.0-rc.0",
+    "version": "1.19.0-rc.0",
+    "minor": "1_19"
+  },
+  "1.19.0": {
+    "rev": "177dc8ab593415b48c9b0a9358897d2155cfd331",
+    "ref": "refs/tags/v1.19.0",
+    "version": "1.19.0",
+    "minor": "1_19"
+  },
+  "1.19-latest": {
+    "rev": "92094c9ef1e78ee2e7ecb0262a2eb7d7aa14b743",
+    "ref": "refs/tags/v1.19-latest",
+    "version": "1.19-latest",
+    "minor": "1_19"
+  },
+  "1.18.4": {
+    "rev": "7b20c281d521aa7aa2ad2baa1e9ae6c579d79d0c",
+    "ref": "refs/tags/v1.18.4",
+    "version": "1.18.4",
+    "minor": "1_18"
+  },
   "1.18.3": {
     "rev": "e35ffc5a903bff3b595e323eb1ac12c4ecd515ad",
     "ref": "refs/tags/v1.18.3",
@@ -30,7 +78,7 @@
     "minor": "1_18"
   },
   "1.18-latest": {
-    "rev": "e34495e304de1b1758b71d20c6859584b365fee4",
+    "rev": "a622a8ef92f58a861b9e0872d3dc669756a0ee0e",
     "ref": "refs/tags/v1.18-latest",
     "version": "1.18-latest",
     "minor": "1_18"

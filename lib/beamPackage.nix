@@ -18,7 +18,7 @@ let
   # 26 -> 26
   defaultMinorVersion = builtins.replaceStrings [ "." ] [ "_" ] version;
   defaultMinor = parentAttrSet."${name}_${defaultMinorVersion}";
-  versionedPackage = parentAttrSet."${name}_${minorAttrs.minor}".override {
+  versionedPackage = parentAttrSet."${name}_${minorAttrs.minor}".overrideAttrs {
     version = minorAttrs.version;
     src = builtins.fetchGit {
       inherit url;
